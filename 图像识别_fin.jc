@@ -208,18 +208,50 @@ void to_the_moon(){
         wait(0.2);
         WER_SetMotor(-45, -45, 1.8);
     }
+    void moon_back() {
+			WER_SetMotor(30, 30, 1);
+            WER_SetMotor(-30, 30, 0.4);
+            WER_SetMotor(-30, -30, 2);
+        }
+        
+  void back_from_3() 
+  {
+		WER_SetMotor(30, 30, 0.5);
+		WER_SetMotor(30, -30, 0.5);
+        WER_SetMotor(30, 30, 0.7);
+        WER_SetMotor(30, -30, 0.55);
+        WER_SetMotor(30, 30, 3.5);
+      }
+      
+   void back_from_2() {
+       WER_SetMotor(30, 30, 0.5);
+       WER_SetMotor(30, -30, 0.5);
+       WER_SetMotor(30, 30, 2.5);
+       }
+    void back_from_1() {
+        WER_SetMotor(27, 30, 3);
+        }
+    void back_from_4() {
+        WER_SetMotor(30, 30, 0.5);
+        WER_SetMotor(-30, 30, 0.7);
+        WER_SetMotor(30, 30, 3.5);
+        }
 void main() 
 {
     WER_InitRobot_5(0,1.000000,1,1.000000,0,1,2,3,4,1);
     entering();
     int num = remove_sticks();
     // goto_1();
-    // goto_3();
-    // goto_4();
-    // goto_2();
-    to_the_moon();
+    //goto_3();
+    goto_4();
+    //goto_2();
+    //to_the_moon();
     turnable(num);
+    //moon_back();
+    //back_from_3();
+    back_from_4();
 }
+
 
 
 

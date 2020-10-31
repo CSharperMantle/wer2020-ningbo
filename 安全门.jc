@@ -1,0 +1,153 @@
+#include "ASEIO.h"
+
+void to_4() {
+    ServoPort_Init(5);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30,30,1.000);
+    WER_SetMotor_L(0,">",2000,30,30);
+    WER_LineWay_C(30,5,0.000);
+    WER_RTurn(60);		
+    WER_SetMotor(-30,-30,0.300);
+    WER_LineWay_C(30,15,0.100);
+	wait( 0.200000 );
+    WER_LTurn(60);		
+    WER_LineWay_C(30,1,0.500);
+    wait( 0.500000 );		
+    WER_SetMotor(30,-30,0.500);
+    WER_SetMotor(-30,-30,0.300);
+    wait( 0.200000 );
+    WER_SetMotor(30,-30,0.200);
+    WER_SetMotor(40,40,1.000);
+    WER_SetMotor(-30,-30,1.000);
+    PO16_Move(1,512,238);
+    wait( 0.500000 );		
+    WER_SetMotor(30,30,1.000);
+    wait( 0.200000 );
+    WER_SetMotor(-30,-30,0.800);
+    PO16_Move(1,512,819);
+    wait( 0.500000 );		
+    WER_SetMotor(30,30,1.000);
+    PO16_Move(1,512,409);
+    wait( 1.000000 );
+    PO16_Move(1,512,819);
+    wait( 0.500000 );
+    WER_SetMotor(-30, -30, 0.3);
+    WER_SetMotor(30, -30, 0.35);
+    WER_SetMotor(30, 30, 3.5);
+    
+    }
+    
+void to_1(){
+        ServoPort_Init(5);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30,30,1.000);
+    WER_SetMotor_L(0,">",2000,30,30);
+    WER_LineWay_C(30,5,0.000);
+    WER_RTurn(60);		
+    WER_SetMotor(-30,-30,0.300);
+    WER_LineWay_T(30, 0.5);
+    WER_SetMotor(-30, -30, 0.5);
+    WER_LineWay_T(30, 0.5);
+		WER_SetMotor(40, 40, 2);
+        WER_SetMotor(-30, -30, 1);
+        PO16_Move(1,512,238);
+        wait(1);
+        WER_SetMotor(40, 40, 1);
+        WER_SetMotor(-30, -30, 1);
+        PO16_Move(1,512,819);
+        wait(1);
+        WER_SetMotor(40, 40, 1);
+        PO16_Move(1,512,409);
+        wait(0.5);
+        PO16_Move(1,512,819);
+        wait(0.5);
+        WER_SetMotor(-35, -30, 2);
+    }
+    
+void to_2(){
+        ServoPort_Init(5);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30,30,1.000);
+    WER_SetMotor_L(0,">",2000,30,30);
+    WER_LineWay_C(30,5,0.000);
+    WER_RTurn(60);		
+	WER_LineWay_C(20, 15, 0);
+    WER_RTurn(60);
+    WER_LineWay_T(30, 1.5);
+    WER_SetMotor(-30, 30, 0.6);
+    WER_SetMotor(-30, -30, 0.3);
+    WER_SetMotor(-30, 30, 0.2);
+    WER_SetMotor(30, 30, 1);
+    WER_SetMotor(-30, -30, 0.7);
+    PO16_Move(1,512,238);
+    wait(0.5);
+    WER_SetMotor(30, 30, 0.7);
+    WER_SetMotor(-30, -30, 0.7);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30, 30, 0.7);
+    PO16_Move(1,512,409);
+    wait(0.5);
+    PO16_Move(1,512,819);
+    wait(0.5);
+    WER_SetMotor(-30, -30, 0.3);
+    WER_SetMotor(-30, 30, 0.5);
+    WER_SetMotor(30, 30, 3);
+    }
+    
+void to_3() {
+    ServoPort_Init(5);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30,30,1.000);
+    WER_SetMotor_L(0,">",2000,30,30);
+    WER_LineWay_C(30,5,0.000);
+    WER_RTurn(60);		
+	WER_LineWay_C(30, 15, 0);
+    WER_RTurn(60);
+    WER_LineWay_C(30, 5, 0.2);
+    WER_SetMotor(-30, 30, 0.6);
+    WER_SetMotor(-30, -30, 0.3);
+    WER_SetMotor(-30, 30, 0.2);
+    WER_SetMotor(30, 30, 1);
+        WER_SetMotor(-30, -30, 0.7);
+    PO16_Move(1,512,238);
+    wait(0.5);
+    WER_SetMotor(30, 30, 0.7);
+    WER_SetMotor(-30, -30, 0.7);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30, 30, 0.7);
+    PO16_Move(1,512,409);
+    wait(0.5);
+    PO16_Move(1,512,819);
+    wait(0.5);
+    WER_SetMotor(-30, -30, 0.3);
+    WER_SetMotor(-30, 30, 0.5);
+    WER_SetMotor(30, 30, 0.5);
+    WER_SetMotor(30, -30, 0.5);
+    WER_SetMotor(30, 30, 4);
+    }
+    
+    void to_the_earth(){
+        ServoPort_Init(5);
+    PO16_Move(1,512,238);
+	WER_SetMotor(30, 30, 1.5);
+    wait(0.5);
+    WER_SetMotor(-30, -30, 0.7);
+    PO16_Move(1,512,819);
+    WER_SetMotor(30, 30, 0.7);
+    PO16_Move(1,512,409);
+    wait(0.5);
+    PO16_Move(1,512,819);
+    WER_SetMotor_L(0,">",2000,-30,-30);
+        }
+
+void main()
+{
+	WER_InitRobot_5(0,1.000000,1,1.000000,0,1,2,3,4,1);
+    to_the_earth();
+}
+
+
+
+
+
+//2013DUODUOProgramAA0905
