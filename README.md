@@ -3,7 +3,7 @@ Repository for holding sources for World Educational Robotic Competition in Ning
 
 `lower-bot` contains sources for bots that works on lower platform.
 
-`tools` contains core that are for testing, calibration or so.
+`tools` contains code that are for testing, calibration or so.
 
 Other sources are used for upper bots.
 
